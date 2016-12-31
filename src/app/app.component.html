@@ -1,0 +1,22 @@
+<div id="titlebar">
+  <div id="title">{{title}}</div>
+  <ul class="news-topicwrapper">
+    <li *ngFor="let tp of topics"
+      (click)="onTopicSelect(tp.id)"
+      class="news-topic">
+      {{tp.displayName}}
+    </li>
+  </ul>
+  <div id="titlebar-right">
+    <ul class="titlebar-buttonswrapper">
+      <li class="titlebar-button-text">International Edition +</li>
+      <li><i class="material-icons">search</i></li>
+      <li><i class="material-icons">menu</i></li>
+    </ul>
+  </div>
+</div>
+
+<div *ngFor="let sr of sources" class="news-sourcewrapper">
+    <app-news-source [myNewsSource]="sr"></app-news-source><br>
+</div>
+

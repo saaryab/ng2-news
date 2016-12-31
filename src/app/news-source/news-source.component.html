@@ -1,0 +1,18 @@
+
+  <div class="news-source-title">
+    <span class="news-source-title-text">{{myNewsSource.name}}</span><span class="news-source-title-button">></span>
+  </div><!--
+  <div class="news-article-first">
+    <p>{{articles.pop().urlToImage}}</p>
+    <p>{{articles.pop().title}}</p>
+    <img src="{{articles[0].urlToImage}}" />
+    <a href="{{articles[0].url}}">{{articles[0].title}}</a>
+  </div>
+-->
+  <div *ngFor="let ar of articles; let f = first" class="news-article">
+    <a href="{{ar.url}}" [style.font-size]="f ? 'x-large' : 'medium'">
+      <img *ngIf="f&&ar.urlToImage" src="{{ar.urlToImage}}" />
+      {{ar.title}}
+    </a>
+  </div>
+  

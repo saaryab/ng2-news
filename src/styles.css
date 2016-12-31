@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    position: relative;
+    top: 3em;
+    padding: 1em 10em 1em 10em;
+    font-family: arial, sans-serif;
+}
+
+#titlebar {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 1em 1em 1em 17em;
+}
+
+#title {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 7em;
+    background-color: #cb0000;
+    color: white;
+    font-weight: bold;
+    padding: 1em 1em 1.5em 1em;
+    width: 6em;
+}
+
+#titlebar a {
+    color: #b8b8b8;
+    display: inline-block;
+    text-decoration: none;
+}
+
+#titlebar a:hover {
+    color: white;
+}
+
+#titlebar a:after {
+    content: " | ";color: #0c0c0c;
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    body {
+        padding: 1em 1em 1em 1em;
+    }
+}

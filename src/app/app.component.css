@@ -1,0 +1,65 @@
+#titlebar {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 1em 1em 1em 17em;
+}
+
+#title {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 7em;
+    background-color: #cb0000;
+    color: white;
+    font-weight: bold;
+    padding: 1em 1em 1.5em 1em;
+    width: 6em;
+}
+
+#titlebar ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+#titlebar li {
+    color: #b8b8b8;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px 2px 0px 0px;
+    cursor: pointer;
+}
+
+#titlebar li:hover {
+    color: white;
+}
+
+#titlebar li.news-topic:after {
+    content: " | ";color: #0c0c0c;
+}
+
+.news-sourcewrapper {
+    width: 300px;
+    display: inline-table;
+    margin: 15px;
+}
+
+#titlebar #titlebar-right {
+    display: block;
+    position: fixed;
+    right: 1em;
+    top: 1em;
+}
+
+#titlebar-right .titlebar-buttonwrapper li {
+    margin-right: 5px;
+}
+
+#titlebar-right .titlebar-button-text {
+    position: relative;
+    top: -0.5em;
+}
