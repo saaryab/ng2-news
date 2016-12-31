@@ -14,11 +14,12 @@
     /* height: 34px; */
 }
 
-span.news-source-title-button {
+a.news-source-title-button {
+    color: #404040;
     float: right;
     background-color: #e6e6e6;
     display: block;
-    padding: 0.5em;
+    padding: 0.3em 0.3em 0.1em 0.3em;
     margin: -0.5em;
 }
 

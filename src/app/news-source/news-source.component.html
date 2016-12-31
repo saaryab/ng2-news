@@ -1,6 +1,7 @@
 
   <div class="news-source-title">
-    <span class="news-source-title-text">{{myNewsSource.name}}</span><span class="news-source-title-button">></span>
+    <span class="news-source-title-text">{{myNewsSource.name}}</span>
+    <a href="{{myNewsSource.url}}" class="news-source-title-button"><i class="material-icons">keyboard_arrow_right</i></a>
   </div>
 
   <div *ngFor="let ar of articles; let f = first" class="news-article">
