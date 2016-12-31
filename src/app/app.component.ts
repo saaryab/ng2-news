@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.topics = TOPICS;
-    this.getSources('sport');  
+    this.getSources('');  
   }
 
   getSources(topicID: string): void {
