@@ -7,6 +7,7 @@
     background-color: black;
     color: white;
     padding: 1em 1em 1em 17em;
+    text-align: left;
 }
 
 #title {
@@ -62,4 +63,29 @@
 #titlebar-right .titlebar-button-text {
     position: relative;
     top: -0.5em;
+}
+#titlebar li.titlebar-button-mobilemenu {
+    display: none;
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 1200px) {
+    #titlebar {
+        min-height: 20px;
+    }
+    #titlebar li {
+        display: none;
+    }
+    #titlebar li.titlebar-button-mobilemenu {
+        display: inline-block;
+    }
+    #title {
+        left: 5px;
+    }
+    #titlebar li.responsive {
+    display: block;
+    padding: 1em;
+    width: 100%;
+}
 }

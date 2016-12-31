@@ -3,6 +3,7 @@
   <ul class="news-topicwrapper">
     <li *ngFor="let tp of topics"
       (click)="onTopicSelect(tp.id)"
+      [class.responsive]="isMobileMenuShowing"
       class="news-topic">
       {{tp.displayName}}
     </li>
@@ -11,7 +12,9 @@
     <ul class="titlebar-buttonswrapper">
       <li class="titlebar-button-text">International Edition +</li>
       <li><i class="material-icons">search</i></li>
-      <li><i class="material-icons">menu</i></li>
+      <li (click)="toggleMobileMenu()" class="titlebar-button-mobilemenu">
+        <i class="material-icons">menu</i>
+      </li>
     </ul>
   </div>
 </div>

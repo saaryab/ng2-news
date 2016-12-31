@@ -15,6 +15,7 @@ export class AppComponent implements OnInit {
   title = 'NG2-News';
   topics : Topic[];
   sources : Source[];
+  isMobileMenuShowing = false;
 
   constructor(private newsService:NewsService) { }
 
@@ -29,6 +30,12 @@ export class AppComponent implements OnInit {
 
   onTopicSelect(topicID: string): void {
     this.getSources(topicID);
+    //hide menu on mobile
+    if(this.isMobileMenuShowing) this.isMobileMenuShowing = false;
+  }
+
+  toggleMobileMenu() :void {
+    this.isMobileMenuShowing = !this.isMobileMenuShowing;
   }
 
 }
