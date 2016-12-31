@@ -73,10 +73,12 @@
 @media only screen and (max-width: 1200px) {
     #titlebar {
         min-height: 20px;
+        padding: 1em;
     }
     #titlebar li {
         display: none;
     }
+
     #titlebar li.titlebar-button-mobilemenu {
         display: inline-block;
     }
@@ -84,8 +86,11 @@
         left: 5px;
     }
     #titlebar li.responsive {
-    display: block;
-    padding: 1em;
-    width: 100%;
+        display: block;
+        padding: 1em;
+        width: 100%;
+    }
+    #titlebar ul.news-topicwrapper.responsive {
+        padding-top: 3em;
     }
 }

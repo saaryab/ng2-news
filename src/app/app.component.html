@@ -1,6 +1,6 @@
 <div id="titlebar">
   <div id="title">{{title}}</div>
-  <ul class="news-topicwrapper">
+  <ul class="news-topicwrapper" [class.responsive]="isMobileMenuShowing">
     <li *ngFor="let tp of topics"
       (click)="onTopicSelect(tp.id)"
       [class.responsive]="isMobileMenuShowing"
